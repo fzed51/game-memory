@@ -1,0 +1,24 @@
+.App {}
+
+.game {
+
+  width: 90vw;
+  height: 90vh;
+
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+
+  .game-plateau {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tray {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+  }
+}
