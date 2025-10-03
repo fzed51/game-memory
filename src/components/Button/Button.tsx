@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import "./button.scss";
+import { type FC } from "react";
+import "./button.css";
 
 export interface ButtonProps {
     label: string;

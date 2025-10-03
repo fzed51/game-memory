@@ -1,5 +1,4 @@
-import React from 'react';
-import './App.scss';
+import './App.css';
 import Game from '../Game/Game';
 
 function App() {

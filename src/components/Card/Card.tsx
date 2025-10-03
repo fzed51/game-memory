@@ -1,6 +1,6 @@
-import React, { FC } from "react";
+import { type FC } from "react";
 import cn from "classnames"
-import "./card.scss"
+import "./card.css"
 
 export interface CardProps {
     display: string;

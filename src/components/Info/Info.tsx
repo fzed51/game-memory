@@ -1,15 +1,14 @@
-import React, { FC, useMemo } from "react";
+import { useMemo } from "react";
 import Button from "../Button/Button";
 import DiffTime from "../DiffTime/DiffTime";
-import { State } from "../Game/types";
-import "./info.scss"
+import { type State } from "../Game/types";
+import "./info.css"
 export interface InfoProps {
     state: State;
     onReset: () => void;
 }
 
-export const Info: FC<InfoProps> = ({ state, onReset }) => {
-
+export const Info = ({ state, onReset }: InfoProps) => {
     const paire = useMemo(() => state.cards.length / 2, [state.cards])
     const finded = useMemo(() => state.lockedCards.length / 2, [state.lockedCards])
     const handleReset = () => onReset()
